@@ -26,9 +26,25 @@
   justify-content: space-between;
   align-items: center;
 }
+.nav-navigation a:hover {
+  color: #2196f3;
+}
 .section-header {
   display: flex;
   align-items: center;
+}
+.mailto {
+  font-family: "Roboto";
+  color: #757575;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 40px;
+}
+.telephone {
+  font-family: "Roboto";
+  color: #757575;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .logo {
   font-family: var(--logo-font-family);
@@ -66,7 +82,10 @@ nav {
   letter-spacing: 0.02em;
   text-align: left;
 }
-.nav-contact {
+
+.section-header-info {
+  display: flex;
+  align-items: center;
   color: #757575;
   font-family: "Roboto";
   font-style: normal;
@@ -75,13 +94,12 @@ nav {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.nav-contact:hover {
-  color: var(--link-color);
+.section-hea li {
+  display: flex;
 }
 
-.section-header-info {
-  display: flex;
-  align-items: center;
+.section-header-info li:hover {
+  color: #2196f3;
 }
 .hero-section {
   background-color: var(--alternative-color);
@@ -93,7 +111,6 @@ nav {
   padding-top: 10px;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(/images/main-photo.jpg);
-  max-width: 1600px;
 }
 
 .section-header li + li {
@@ -115,11 +132,11 @@ nav {
 }
 
 body {
-  margin: 0;
 }
 
 .contact-section li {
   padding-right: 10px;
+  display: flex;
 }
 .section-title {
 }
@@ -228,13 +245,15 @@ h4 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  padding-top: 40px;
-  justify-content: center;
+  padding-bottom: 94px;
+  padding-left: 130px;
+  padding-right: 150px;
+  padding-top: 20px;
 }
-.section-list li {
-  padding-right: 30px;
+.section-list li + li {
+  gap: 30px;
 }
+
 .photo-section {
   display: flex;
   justify-content: center;
@@ -248,6 +267,16 @@ h4 {
 }
 p {
   color: #757575;
+}
+
+.item-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  width: 270px;
+  height: 75px;
 }
 ul {
   list-style-type: none;
@@ -529,7 +558,6 @@ use:hover {
   background: #f5f4fa;
   border-radius: 4px;
   gap: 30px;
-  margin-left: 145px;
 }
 .symbol-list {
   display: flex;
@@ -557,15 +585,14 @@ use:hover {
   background: #f5f4fa;
   border-radius: 4px;
   gap: 30px;
-  margin-left: 145px;
   margin-top: 94px;
 }
 .header-svg {
   display: flex;
   width: 16px;
   height: 12px;
-  margin-left: 5px;
-  color: #212121;
+  margin-right: 10px;
+  margin-top: 2px;
 }
 
 .bluehover a {
@@ -593,7 +620,4 @@ use:hover {
   gap: 10px;
   justify-content: center;
   padding-bottom: 30px;
-}
-.telephone {
-  margin-left: 40px;
 }

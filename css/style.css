@@ -110,7 +110,7 @@ nav {
   height: 600px;
   padding-top: 10px;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/main-photo.jpg);
+    url("./images/main-photo.jpg");
 }
 
 .section-header li + li {
@@ -246,11 +246,9 @@ h4 {
   font-style: normal;
   font-weight: 400;
   padding-bottom: 94px;
-  padding-left: 130px;
+  padding-left: 10px;
   padding-right: 150px;
   padding-top: 20px;
-}
-.section-list li + li {
   gap: 30px;
 }
 
@@ -513,6 +511,7 @@ h5 {
   left: 415px;
   top: 2493px;
   border-radius: 4px;
+  cursor: pointer;
 }
 .svg-section {
   width: 170px;
